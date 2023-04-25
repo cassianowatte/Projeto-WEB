@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="login.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic"
+      rel="stylesheet"
+    />
+    <title>Login</title>
+  </head>
+  <body>
+    <div id="content">
+      <h1 id="text_login">Bem vindo, faça seu login!</h1>
+
+      <form action="enivar_login.php" method="post">
+        <label id="text_username" for="username">Username </label>
+
+        <input id="input" type="text" id="username" name="username" required />
+        <label id="text_password" for="password">Password </label>
+
+        <input
+          id="input"
+          type="password"
+          name="password"
+          id="password"
+          required
+        />
+        <input
+          type="checkbox"
+          name="password_remember"
+          id="password_remember"
+        />
+        Remember Password
+        <input id="Btn_login" type="button" value="Login" />
+        <a id="cadastro" href="../cadastro/cadastro.html">Cadastro</a>
+        <a id="password_wrong" href="../wrongpass/wrong_pass.html"
+          >Esqueceu a senha?</a
+        >
+      </form>
+    </div>
+  </body>
+</html>
